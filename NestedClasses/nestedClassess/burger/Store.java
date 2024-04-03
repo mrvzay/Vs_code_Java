@@ -6,6 +6,7 @@ public class Store {
     
 
     Meal regularMeal = new Meal();
+    regularMeal.addToppings("Ketchup", "Mayo", "Bacon", "Cheddar");
     System.out.println(regularMeal);
 
     Meal USRegularMeal = new Meal(0.68);
