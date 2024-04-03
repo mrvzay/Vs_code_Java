@@ -23,7 +23,6 @@ public class Main {
     printOrderedList(list, "name");
     System.out.println();
     printOrderedList(list, "year");
-
   }
 
   public static void printOrderedList(List<Employee> eList, String sortField) {
@@ -40,12 +39,13 @@ public class Main {
         this.containedEmployee = containedEmployee;
         yearsWorked = currentYear - Integer.parseInt(
             containedEmployee.hireDate().split("/")[2]);
-        fullName = String.join(" ", containedEmployee.first(), containedEmployee.last());
+        fullName = String.join(" ",
+            containedEmployee.first(), containedEmployee.last());
       }
 
       @Override
       public String toString() {
-        return "%s has beena n employee for %d years".formatted(
+        return "%s has been an employee for %d years".formatted(
             fullName, yearsWorked);
       }
     }
