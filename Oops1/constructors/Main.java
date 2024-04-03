@@ -14,7 +14,7 @@ public class Main {
     // bobsAccount.setNumber("12345");
     // bobsAccount.setBalance(1000.00);
     // bobsAccount.setCusotmerName("Bob Brown");
-    // bobsAccount.setCusotmerName("myemail@bob.com");
+    // bobsAccount.setCusotmerEmail("myemail@bob.com");
     // bobsAccount.setCustomerPhone("(087) 123-4567");
 
     bobsAccount.withdrawFunds(100.0);
