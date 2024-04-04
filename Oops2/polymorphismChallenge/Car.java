@@ -17,7 +17,7 @@ public class Car {
   }
 
   public void drive() {
-    System.out.println("CAr -> driving, type is " + getClass().getSimpleName());
+    System.out.println("Car -> driving, type is " + getClass().getSimpleName());
     runEngine();
   }
 }
