@@ -8,6 +8,7 @@ import java.util.Scanner;
 public class Main {
 
     private static final Random random = new Random();
+
     private static final Scanner scanner = new Scanner(System.in);
 
     public static void main(String[] args) {
@@ -17,7 +18,7 @@ public class Main {
         do {
             rollDice(currentDice);
         } while (!pickLosers(currentDice));
-        System.out.println("Game over. Real game would score and continue.");
+        System.out.println("Game over.  Real game would score and continue.");
     }
 
     private static void rollDice(List<Integer> currentDice) {
@@ -33,23 +34,25 @@ public class Main {
         currentDice.addAll(newDice);
 
         System.out.println("You're dice are: " + currentDice);
+
     }
 
     private static boolean pickLosers(List<Integer> currentDice) {
 
         String prompt = """
-                Press Enter to Score.
-                Type "ALL" to re-roll all the dice.
-                List numbers (separated by spaces) to re-roll selected dice.
-               \s""";
+                    Press Enter to Score.
+                    Type "ALL" to re-roll all the dice.
+                    List numbers (separated by spaces) to re-roll selected dice.
+                        """;
 
-        System.out.print(prompt + "---> ");
+        System.out.print(prompt + "-->  ");
         String userInput = scanner.nextLine();
         if (userInput.isBlank()) {
             return true;
         }
         try {
             removeDice(currentDice, userInput.split(" "));
+
         } catch (Exception e) {
             e.printStackTrace(System.out);
             System.out.println("Bad input, Try again");
@@ -68,4 +71,5 @@ public class Main {
             System.out.println("Keeping " + currentDice);
         }
     }
+
 }
