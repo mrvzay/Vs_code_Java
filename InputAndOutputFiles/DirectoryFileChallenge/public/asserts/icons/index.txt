@@ -1,0 +1,5 @@
+Directory Contents: 
+C:\Users\vzay1\Desktop\Vs_Java\InputAndOutputFiles\DirectoryFileChallenge\public\asserts\icons
+C:\Users\vzay1\Desktop\Vs_Java\InputAndOutputFiles\DirectoryFileChallenge\public\asserts\icons\index.txt
+C:\Users\vzay1\Desktop\Vs_Java\InputAndOutputFiles\DirectoryFileChallenge\public\asserts\icons\indexCopy.txt
+Generated: 2024-04-19T16:40:57.687977300
