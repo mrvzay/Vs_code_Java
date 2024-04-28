@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/Oops.iml" filepath="$PROJECT_DIR$/Oops.iml" />
+      <module fileurl="file://$PROJECT_DIR$/StringFormatting.iml" filepath="$PROJECT_DIR$/StringFormatting.iml" />
     </modules>
   </component>
 </project>
