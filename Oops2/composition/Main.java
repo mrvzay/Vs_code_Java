@@ -14,7 +14,7 @@ public class Main {
         theCase, theMonitor, theMotherboard);
 
     // thePc.getMonitor().drawPixelAt(10, 10, "red");
-    // thePc.getMotherboard().loadProgram("Windoes OS");
+    // thePc.getMotherboard().loadProgram("Windows OS");
     // thePc.getComputerCase().pressPowerButton();
 
     thePc.powerUp();
