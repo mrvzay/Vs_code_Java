@@ -1,4 +1,4 @@
-public class GenericMethodExample {
+public class Main {
 
     // Generic method to find the maximum element in an array
     public static <T extends Comparable<T>> T findMax(T[] array) {
@@ -13,7 +13,27 @@ public class GenericMethodExample {
         }
         return max;
     }
+///////////////////////////////////////////////
+     // Method to find the maximum element in an array of integers
+    public static int findMax(int[] array) {
+        if (array == null || array.length == 0)
+            throw new IllegalArgumentException("Array is empty or null");
 
+        int max = array[0];
+        for (int i = 1; i < array.length; i++) {
+            if (array[i] > max) {
+                max = array[i];
+            }
+        }
+        return max;
+    }
+
+    public static void main(String[] args) {
+        int[] intArray = {3, 7, 1, 9, 4};
+        System.out.println("Maximum Integer: " + findMax(intArray));
+    }
+
+    //////////////////////////////////////
     public static void main(String[] args) {
         Integer[] intArray = {3, 7, 1, 9, 4};
         System.out.println("Maximum Integer: " + findMax(intArray));
